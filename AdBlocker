@@ -1,0 +1,119 @@
+@font-face {
+    font-family: gamefont;
+    src: url(https://krunker.io/css/fonts/font1.ttf);
+}
+
+#settingsPop:after{ 
+  content:'CSS made by ex#0006';
+color: black;
+margin-top: 3px;
+font-size: 22px;
+}
+#aContainer {
+    display: none!important;
+}
+#rightABox {
+   display: none!important;
+}
+
+    #backgroundImage {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://plainbackground.com/plain1024/abaaa5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#navBar {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 85px;
+}
+#chatScroller {
+    padding-bottom: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 9999;
+    position: absolute;
+    top: 85px;
+    bottom: 0;
+    background-color: rgb(0 0 0 / 0%);
+    width: 90px;
+    text-align: center;
+}
+#popupBack {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(0 0 0 / 0%);
+}
+.marketCard {
+    position: relative;
+    text-align: center;
+    color: #fff0;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    width: 210px;
+    height: 215px;
+    vertical-align: top;
+    background-color: rgb(0 0 0 / 0%);
+    border-radius: 5px;
+    display: inline-block;
+    z-index: 1;
+    pointer-events: auto;
+    cursor: pointer;
+}
+.cardActions {
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgb(103 103 100 / 0%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255,255,255,.5);
+    font-size: 12px;
+}
+* {
+    outline: none;
+    font-family: gamefont;
+    color: #353535;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    margin: 6px;
+    border: 6px solid #f00;
+    border-radius: 50%;
+    animation: lds-ring 1.5s cubic-bezier(.5,0,.5,1) infinite;
+    border-color: #00ff0f rgb(251, 255, 0) rgb(0, 235, 255) rgb(255, 0, 254);
+}
+.rainbow {
+    -webkit-animation: rainbow 1.5s linear infinite;
+    animation: rainbow 1.5s linear infinite;
+}
+.rainbowBorder {
+    -webkit-animation: rainbowB 1.5s linear infinite;
+    animation: rainbowB 1.5s linear infinite;
+}
