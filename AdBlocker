@@ -107,10 +107,10 @@ font-size: 22px;
     width: 51px;
     height: 51px;
     margin: 6px;
-    border: 6px solid #f00;
+    border: 6px solid #f000;
     border-radius: 50%;
     animation: lds-ring 1.5s cubic-bezier(.5,0,.5,1) infinite;
-    border-color: #00ff0f rgb(251, 255, 0) rgb(0, 235, 255) rgb(255, 0, 254);
+     animation: rainbowB 0.5s linear infinite;
 }
 .rainbow {
     -webkit-animation: rainbow 1.5s linear infinite;
@@ -119,4 +119,57 @@ font-size: 22px;
 .rainbowBorder {
     -webkit-animation: rainbowB 1.5s linear infinite;
     animation: rainbowB 1.5s linear infinite;
+}
+#hubBox {
+    display: inline-block;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: -7px;
+    vertical-align: middle;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0);
+    background-color: #4287f500;
+    border-radius: 5px;
+}
+#navTitle {
+    top: 12px;
+    position: absolute;
+    font-size: 35px;
+    color: #fff0;
+    z-index: 6;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+#navTitle:after{ 
+  content:'⃤';
+color: black;
+top: 12px;
+    position: absolute;
+    font-size: 35px;
+    z-index: 11;
+    left: 50%;
+    transform: translate(-50%,0);
+    -webkit-animation: rainbow 0.1s linear infinite;
+    animation: rainbow 1.5s linear infinite;
+}
+.pSt {
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    margin-top: 5px;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+    margin-left: 2px;
+    margin-right: 2px;
+    text-transform: uppercase;
+    border: 2px solid rgba(0,0,0,.2);
+    border-radius: 4px;
+    width: 120px;
+    background-color: rgba(0,0,0,.3);
+    text-shadow: -1px -1px 0 #202020,1px -1px 0 #202020,-1px 1px 0 #202020,1px 1px 0 #202020,-2px -2px 0 #202020,2px -2px 0 #202020,-2px 2px 0 #202020,2px 2px 0 #202020!important;
+animation: rainbowB 0.5s linear infinite;
 }
